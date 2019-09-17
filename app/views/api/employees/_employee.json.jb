@@ -1,0 +1,9 @@
+{
+  id: employee.id,
+  first_name: employee.first_name,
+  last_name: employee.last_name,
+  email: employee.email,
+  hourly_wage: employee.hourly_wage,
+  department_id: employee.department_id,
+  department: (render partial: 'api/departments/department.json.jb', locals: {department: employee.department})
+}
